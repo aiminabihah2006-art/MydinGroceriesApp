@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="MydinGroceriesApp.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Mydin Groceries App</title>
+   
+    <link href="Styles/StyleSheet1.css" rel="stylesheet" /> 
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" class="fontForm">
+   <img src="Images/Logo-Mydin.png" style="height: 325px" />
+
+    <div class="header">
+        <h1>Welcome to Mydin Groceries</h1>
+        <p>Fresh groceries, household items, and more!</p>
+        </div>
+       
+        <div class="navMenu">
+            <asp:HyperLink ID="HyperLink1" runat="server" CssClass="navLink" NavigateUrl="~/HomePage.aspx">Home</asp:HyperLink> |
+            <asp:HyperLink ID="HyperLink2" runat="server" CssClass="navLink" NavigateUrl="~/Cart.aspx">Shopping Cart</asp:HyperLink> |
+            <asp:HyperLink ID="HyperLink3" runat="server" CssClass="navLink" NavigateUrl="~/Login.aspx">Login</asp:HyperLink>
+        </div>
+
+
+        <div class="leftMenuColumn">
+            <asp:HyperLink ID="lnkHome" runat="server" CssClass="LeftMenuLink" NavigateUrl="~/HomePage.aspx">Home Page</asp:HyperLink> |
+            <asp:HyperLink ID="lnkHomeLiving" runat="server" CssClass="LeftMenuLink" NavigateUrl="~/HomeLiving.aspx">Home&Living</asp:HyperLink> |
+            <asp:HyperLink ID="lnkHealth" runat="server" CssClass="LeftMenuLink" NavigateUrl="~/Health.aspx">Health</asp:HyperLink> |
+            <asp:HyperLink ID="lnkBeauty" runat="server" CssClass="LeftMenuLink" NavigateUrl="~/Beauty.aspx">Beauty</asp:HyperLink> |
+            <asp:HyperLink ID="lnkFood" runat="server" CssClass="LeftMenuLink" NavigateUrl="~/FoodBeverage.aspx">Food&Beverage</asp:HyperLink> |
+          </div>
+
+        <div>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+    </div>
+            <div class="footer">
+                <p>© 2026 Mydin Groceries</p>
+                    </div>
+      
+    </form>
+</body>
+</html>
