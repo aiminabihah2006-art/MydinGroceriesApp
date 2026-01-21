@@ -15,19 +15,20 @@
             </div>
 
             <div class="category-card">
-                <img src="Images/healthcategory.jpg" />
+                <img src="Images/healthcategory.jpg" style="margin-top: 38px" />
                 <h3>Health</h3>
-                <asp:HyperLink ID="lnkHealth" runat="server" NavigateUrl="~/Health.aspx" CssClass="btn">Shop Health</asp:HyperLink>
+               <asp:HyperLink ID="lnkHealth" runat="server" NavigateUrl="~/Health.aspx" CssClass="btn">Shop Health</asp:HyperLink>
+
             </div>
 
             <div class="category-card">
-                <img src="Images/beautycategory.jpg" />
+                <img src="Images/beautycategory.jpg" style="margin-top: 22px" />
                 <h3>Beauty</h3>
                 <asp:HyperLink ID="lnkBeauty" runat="server" NavigateUrl="~/Beauty.aspx" CssClass="btn">Shop Beauty</asp:HyperLink>
             </div>
 
             <div class="category-card">
-                <img src="Images/foodcategory.jpg" />
+                <img src="Images/foodcategory.jpg" style="margin-top: 21px" />
                 <h3>Food&Beverage</h3>
                 <asp:HyperLink ID="lnkFoodBeverage" runat="server" NavigateUrl="~/FoodBeverage.aspx" CssClass="btn">Shop Food&Beverage</asp:HyperLink>
             </div>
