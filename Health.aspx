@@ -14,7 +14,7 @@
             <asp:TextBox ID="txtQtyHandaplast" runat="server" CssClass="qty-box" placeholder="Qty"></asp:TextBox>
             <asp:RequiredFieldValidator ID="rfvQtyHandaplast" runat="server" ControlToValidate="txtQtyHandaplast" ErrorMessage="Quantity required!" ForeColor="Red" />
             <asp:RangeValidator ID="rvQtyHandaplast" runat="server" ControlToValidate="txtQtyHandaplast" MinimumValue="1" MaximumValue="10" Type="Integer" ErrorMessage="Enter 1–10 only." ForeColor="Red" />
-            <asp:Button ID="btnAddHandaplast" runat="server" Text="Add to Cart" CssClass="btn" />
+            <asp:Button ID="btnAddHandaplast" runat="server" Text="Add to Cart" CssClass="btn" OnClick="btnAddHandaplast_Click" />
         </div>
 
       <div class="product-card">
@@ -24,7 +24,7 @@
             <asp:TextBox ID="txtQtyMask" runat="server" CssClass="qty-box" placeholder="Qty"></asp:TextBox>
             <asp:RequiredFieldValidator ID="rfvQtyMask" runat="server" ControlToValidate="txtQtyMask" ErrorMessage="Quantity required!" ForeColor="Red" />
             <asp:RangeValidator ID="rvQtyMask" runat="server" ControlToValidate="txtQtyMask" MinimumValue="1" MaximumValue="20" Type="Integer" ErrorMessage="Enter 1–20 only." ForeColor="Red" />
-            <asp:Button ID="btnAddMask" runat="server" Text="Add to Cart" CssClass="btn" />
+            <asp:Button ID="btnAddMask" runat="server" Text="Add to Cart" CssClass="btn" OnClick="btnAddMask_Click"  />
         </div>
 
      <div class="product-card">
@@ -34,7 +34,7 @@
       <asp:TextBox ID="txtQtyPanadol" runat="server" CssClass="qty-box" placeholder="Qty"></asp:TextBox>
       <asp:RequiredFieldValidator ID="rfvQtyPanadol" runat="server" ControlToValidate="txtQtyPanadol" ErrorMessage="Quantity required!" ForeColor="Red" />
       <asp:RangeValidator ID="rvQtyPanadol" runat="server" ControlToValidate="txtQtyPanadol" MinimumValue="1" MaximumValue="20" Type="Integer" ErrorMessage="Enter 1–20 only." ForeColor="Red" />
-      <asp:Button ID="btnAddPanadol" runat="server" Text="Add to Cart" CssClass="btn" />
+      <asp:Button ID="btnAddPanadol" runat="server" Text="Add to Cart" CssClass="btn" OnClick="btnAddPanadol_Click"  />
   </div>
         
      <div class="product-card">
@@ -44,7 +44,7 @@
             <asp:TextBox ID="txtQtyVitamins" runat="server" CssClass="qty-box" placeholder="Qty"></asp:TextBox>
             <asp:RequiredFieldValidator ID="rfvQtyVitamins" runat="server" ControlToValidate="txtQtyVitamins" ErrorMessage="Quantity required!" ForeColor="Red" />
             <asp:RangeValidator ID="rvQtyVitamins" runat="server" ControlToValidate="txtQtyVitamins" MinimumValue="1" MaximumValue="5" Type="Integer" ErrorMessage="Enter 1–5 only." ForeColor="Red" />
-            <asp:Button ID="btnAddVitamins" runat="server" Text="Add to Cart" CssClass="btn" />
+            <asp:Button ID="btnAddVitamins" runat="server" Text="Add to Cart" CssClass="btn" OnClick="btnAddPanadol_Click"  />
         </div>
 
       <div class="product-card">
@@ -54,7 +54,7 @@
             <asp:TextBox ID="txtQtyInhaler" runat="server" CssClass="qty-box" placeholder="Qty"></asp:TextBox>
             <asp:RequiredFieldValidator ID="rfvQtyInhaler" runat="server" ControlToValidate="txtQtyInhaler" ErrorMessage="Quantity required!" ForeColor="Red" />
             <asp:RangeValidator ID="rvQtyInhaler" runat="server" ControlToValidate="txtQtyInhaler" MinimumValue="1" MaximumValue="5" Type="Integer" ErrorMessage="Enter 1–5 only." ForeColor="Red" />
-            <asp:Button ID="btnAddInhaler" runat="server" Text="Add to Cart" CssClass="btn" />
+            <asp:Button ID="btnAddInhaler" runat="server" Text="Add to Cart" CssClass="btn" OnClick="btnAddInhaler_Click" />
         </div>
 
      <div class="product-card">
@@ -64,7 +64,7 @@
             <asp:TextBox ID="txtQtyFresh" runat="server" CssClass="qty-box" placeholder="Qty"></asp:TextBox>
             <asp:RequiredFieldValidator ID="rfvQtyFresh" runat="server" ControlToValidate="txtQtyFresh" ErrorMessage="Quantity required!" ForeColor="Red" />
             <asp:RangeValidator ID="rvQtyFresh" runat="server" ControlToValidate="txtQtyFresh" MinimumValue="1" MaximumValue="5" Type="Integer" ErrorMessage="Enter 1–5 only." ForeColor="Red" />
-            <asp:Button ID="btnAddFresh" runat="server" Text="Add to Cart" CssClass="btn" />
+            <asp:Button ID="btnAddFresh" runat="server" Text="Add to Cart" CssClass="btn" OnClick="btnAddFresh_Click"  />
         </div>
 
      <div class="product-card">
@@ -74,7 +74,7 @@
             <asp:TextBox ID="txtQtyWound" runat="server" CssClass="qty-box" placeholder="Qty"></asp:TextBox>
             <asp:RequiredFieldValidator ID="rfvQtyWound" runat="server" ControlToValidate="txtQtyWound" ErrorMessage="Quantity required!" ForeColor="Red" />
             <asp:RangeValidator ID="rvQtyWound" runat="server" ControlToValidate="txtQtyWound" MinimumValue="1" MaximumValue="5" Type="Integer" ErrorMessage="Enter 1–5 only." ForeColor="Red" />
-            <asp:Button ID="btnAddWound" runat="server" Text="Add to Cart" CssClass="btn" />
+            <asp:Button ID="btnAddWound" runat="server" Text="Add to Cart" CssClass="btn" OnClick="btnAddWound_Click" />
         </div>
 </div>
 </asp:Content>
